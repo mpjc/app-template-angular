@@ -3,10 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent, HeaderComponent, MainComponent } from './layout';
+import { HomeComponent } from './features/home/home.component';
+import { GameComponent } from './features/Game';
+import { ListComponent } from './features/List';
+import { SettingsComponent } from './features/Settings';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    GameComponent,
+    ListComponent,
+    SettingsComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

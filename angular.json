@@ -7,10 +7,11 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "ata",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "sass",
+          "spec": false
         }
       },
       "architect": {
@@ -27,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/normalize.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -84,7 +86,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/normalize.css"
             ],
             "scripts": [],
             "assets": [
