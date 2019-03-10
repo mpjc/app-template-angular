@@ -1,0 +1,16 @@
+.PuzzleSetup {
+  &-message {
+    margin: 20px 0;
+  }
+  &-row {
+    display: flex;
+    justify-content: center;
+  }
+  &-start {
+    min-width: 300px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,21 @@
+.PuzzleBoard {
+  display: flex;
+  flex-direction: column;
+  height: 80vmin;
+  width: 80vmin;
+  max-height: 460px;
+  max-width: 460px;
+  margin: 0 auto 20px auto;
+  border-radius: 6px;
+  background-color: var(--color-2);
+  &-row {
+    display: flex;
+    flex: 1;
+  }
+  &-cell {
+    flex: 1;
+  }
+  &-tile {
+    flex: 1;
+  }
+}

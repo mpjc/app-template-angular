@@ -1,3 +1,21 @@
-<p>
-  game works!
-</p>
+<div class="Game">
+  <h3>Sliding Puzzle</h3>
+  <div *ngIf="game.phase === 'Setup'">
+    <ata-puzzle-setup></ata-puzzle-setup>
+  </div>
+  <div *ngIf="game.phase !== 'Setup'">
+    <p>Tap a tile to move it</p>
+    <ata-puzzle-board [game]="game"></ata-puzzle-board>
+    <ata-modal *ngIf="game.phase === 'Won'" [showClose]="false">
+      <header></header>
+      <content>
+        <div class="Game-win-text">You win!</div>
+        <div class="Game-play-again ui-button" (click)="quitGame()">Play again?</div>
+      </content>
+    </ata-modal>
+    <div class="Game-controls" *ngIf="game.phase !== 'Won'">
+      <div class="Game-control ui-button" (click)="quitGame()">Quit</div>
+      <div class="Game-control ui-button" (click)="shuffleBoard()">Shuffle</div>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,14 @@
-<p>
-  list works!
-</p>
+<div class="List">
+  <h3>List</h3>
+  <ata-list-add (add)="addItem($event)"></ata-list-add>
+
+  <div class="List-items" *ngIf="anyItems">
+    <ata-list-items [items]="uncheckedItems">
+      <div>All complete!</div>
+    </ata-list-items>
+    <hr *ngIf="checkedItems.length" class="List-separator">
+    <ata-list-items [items]="checkedItems"></ata-list-items>
+    <div class="List-clear ui-button" (click)="clear()">Clear</div>
+  </div>
+  <div class="List-empty" *ngIf="!anyItems">Add an item...</div>
+</div>

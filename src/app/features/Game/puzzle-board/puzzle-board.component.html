@@ -1,0 +1,8 @@
+<div class="PuzzleBoard">
+  <div *ngFor="let row of game.board; let rowIndex = index" class="PuzzleBoard-row">
+    <div *ngFor="let tile of row; let colIndex = index" class="PuzzleBoard-tile"
+      (click)="moveGameTile(colIndex, rowIndex)">
+      <ata-puzzle-tile [boardSize]="game.boardSize" [tile]="tile"></ata-puzzle-tile>
+    </div>
+  </div>
+</div>

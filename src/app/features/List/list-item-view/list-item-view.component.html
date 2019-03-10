@@ -1,0 +1,16 @@
+<div class="ListItemView">
+  <div class="ListItemView-controls">
+    <div class="ListItemView-control" (click)="toggle.emit(item)">
+      <i class="far" [ngClass]="item.checked ? 'fa-check-square' : 'fa-square'"></i>
+    </div>
+  </div>
+  <div class="ListItemView-text" [ngClass]="{'checked': item.checked}">{{item.value}}</div>
+  <div class="ListItemView-controls">
+    <div class="ListItemView-control" (click)="edit.emit(item)">
+      <i class="fas fa-edit"></i>
+    </div>
+    <div class="ListItemView-control" (click)="remove.emit(item)">
+      <i class="fas fa-trash"></i>
+    </div>
+  </div>
+</div>

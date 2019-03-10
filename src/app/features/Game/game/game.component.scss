@@ -1,0 +1,19 @@
+.Game {
+  margin: 0 auto;
+  max-width: 800px;
+  &-win-text {
+    font-size: 1.8em;
+  }
+  &-play-again {
+    margin: 20px 0 10px 0;
+    padding: 0 20px;
+  }
+  &-controls {
+    display: flex;
+    justify-content: center;
+  }
+  &-control {
+    margin: 0 10px;
+    min-width: 30%;
+  }
+}

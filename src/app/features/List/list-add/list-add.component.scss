@@ -1,0 +1,22 @@
+.ListAdd {
+  padding: 8px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 1.2em;
+  &-text {
+    width: 75%;
+    border-radius: 4px;
+    padding-left: 8px;
+  }
+  &-add {
+    display: inline-block;
+    color: var(--color-1);
+    background-color: var(--accent-color-1);
+    margin: 0 8px;
+    width: 36px;
+    border-radius: 6px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

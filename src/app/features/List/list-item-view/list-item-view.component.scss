@@ -1,0 +1,44 @@
+.ListItemView {
+  color: var(--color-1);
+  width: 100%;
+  min-height: 36px;
+  line-height: 36px;
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  &-last {
+    border-bottom: none;
+  }
+  &-text {
+    text-align: left;
+    padding: 0 8px;
+    overflow-wrap: normal;
+    flex: 1 1 auto;
+    &.checked {
+      text-decoration: line-through;
+    }
+  }
+  &-controls {
+    line-height: 0;
+    flex: 0 0 auto;
+  }
+  &-control {
+    color: var(--color-1);
+    display: inline-block;
+    margin: 0 2px;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 6px;
+    cursor: pointer;
+    :hover {
+      color: var(--accent-color-1);
+    }
+    i {
+      line-height: 36px;
+    }
+  }
+}

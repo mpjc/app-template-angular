@@ -1,0 +1,20 @@
+<div class="ListItems">
+  <div *ngIf="items.length">
+    <ata-list-item-view *ngFor="let item of items" [item]="item" (toggle)="toggleListItem($event)"
+      (edit)="setEditItem($event)" (remove)="removeListItem($event)">
+    </ata-list-item-view>
+  </div>
+  <ng-container *ngIf="!items.length">
+    <ng-content></ng-content>
+  </ng-container>
+
+  <ata-modal *ngIf="editItem" (close)="clearEditItem()" [closeOnBgClick]="true">
+    <header>
+      <div class="ListItems-edit-header">Edit item</div>
+    </header>
+    <content>
+      <ata-list-item-edit [item]="editItem" (update)="updateListItem($event)" (cancel)="clearEditItem()">
+      </ata-list-item-edit>
+    </content>
+  </ata-modal>
+</div>

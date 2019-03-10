@@ -1,3 +1,13 @@
-<p>
-  settings works!
-</p>
+<div class="Settings">
+  <h3>Settings</h3>
+  <div class="Settings-group">
+    <div class="Settings-header">Display</div>
+    <div class="Settings-item">
+      <div>Theme: {{settings.theme}}</div>
+      <div (click)="toggleTheme()">
+        <i *ngIf="isDarkTheme" class="fas fa-toggle-on fa-lg"></i>
+        <i *ngIf="!isDarkTheme" class="fas fa-toggle-off fa-lg"></i>
+      </div>
+    </div>
+  </div>
+</div>

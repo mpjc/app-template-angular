@@ -1,0 +1,16 @@
+.Home {
+  margin: 0 auto;
+  max-width: 800px;
+  p {
+    font-size: 0.9em;
+  }
+  &-section {
+    margin-bottom: 34px;
+  }
+  &-features p {
+    margin: 6px;
+  }
+  a {
+    color: var(--accent-color-1);
+  }
+}

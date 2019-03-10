@@ -1,0 +1,16 @@
+.List {
+  margin: 0 auto;
+  max-width: 800px;
+  &-separator {
+    margin: 16px 0;
+  }
+  &-clear {
+    margin: 16px;
+  }
+  &-empty {
+    padding-top: 8px;
+  }
+  &-items {
+    margin-top: 12px;
+  }
+}

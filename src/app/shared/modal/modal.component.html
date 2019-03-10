@@ -1,0 +1,15 @@
+<div class="Modal-background" (click)="tryClose($event)" #modalBackground>
+  <div class="Modal-wrapper">
+    <div class="Modal-container">
+      <div *ngIf="showClose" class="Modal-close" (click)="doClose()">
+        <i class="fas fa-times fa-lg"></i>
+      </div>
+      <div class="Modal-header">
+        <ng-content select="header"></ng-content>
+      </div>
+      <div class="Modal-content">
+        <ng-content select="content"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>
